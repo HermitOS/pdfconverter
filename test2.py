@@ -10,7 +10,7 @@ def convert_excel(file_path: str):
 
     worksheets = sheets.Worksheets[0]
     worksheets.ExportAsFixedFormat(0, 'C:/Users/Isabel/Documents/Hermit/FileToPDF/output.pdf')
-    sheets.close()
+    excel.Application.Quit()
 
 
 convert_excel('C:/Users/Isabel/Documents/Hermit/FileToPDF/testfil2.xlsx')
