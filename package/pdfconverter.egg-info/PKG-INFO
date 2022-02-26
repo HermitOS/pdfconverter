@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pdfconverter
+Version: 0.9.1
+Summary: Python command line program for converting different files to pdfs
+Home-page: UNKNOWN
+Author: Isabel Sandstrøm
+Author-email: isabel@hermit.no
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
