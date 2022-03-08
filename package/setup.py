@@ -6,13 +6,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pdfconverter", 
-    version="0.9.27",
+    version="1.0.0",
     author="Isabel Sandstrøm",
     author_email="isabel@hermit.no",
     description="Python command line program for converting different files to pdfs",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/HermitOS/pdfconverter/tree/main/package",
     packages=['pdfconverter'],
     install_requires=['fpdf>=1.7.2', 'pywin32>=303', 'pywin32-ctypes>=0.2.0', 'Pillow>=8.4.0'],
     entry_points={
