@@ -3,28 +3,25 @@ import PIL.Image as image
 
 image = image.open('DSC00470.jpg')
 width, height = image.size
-print(width, height)
-pxWidth = width * 0.26
-pxHeight = height * 0.26
-relation = pxWidth / pxHeight
+relation_px_mm = 0.26
+mmWidth = width * relation_px_mm
+mmHeight = height * relation_px_mm
+relation = mmWidth / mmHeight
 
 margins = 48
-max_pxWidth = 216 - margins
-max_pxHeight = 279 - margins
+max_mmWidth = 216 - margins
+max_mmHeight = 279 - margins
 
+if mmWidth > max_mmWidth:
+    mmWidth = max_mmWidth
+    mmHeight = mmWidth / relation
 
-if pxWidth > max_pxWidth:
-    print('w')
-    pxWidth = max_pxWidth
-    pxHeight = pxWidth / relation
-
-if pxHeight > max_pxHeight:
-    print('h')
-    pxHeight = max_pxHeigh
-    pxWidth = pxHeight * relation
+if mmHeight > max_mmHeight:
+    mmHeight = max_mmHeight
+    mmWidth = mmHeight * relation
 
 pdf = FPDF()
 pdf.add_page()
-pdf.image('DSC00470.jpg', w=pxWidth, h=pxHeight)
+pdf.image('DSC00470.jpg', w=mmWidth, h=mmHeight)
 pdf.output('image.pdf')
 

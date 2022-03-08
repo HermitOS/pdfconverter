@@ -1,3 +1,8 @@
+# https://docs.microsoft.com/en-us/office/vba/api/excel.workbook
+# https://pbpython.com/windows-com.html
+# https://docs.microsoft.com/en-us/office/vba/api/excel.pagesetup.fittopageswide
+# https://www.geeksforgeeks.org/convert-excel-to-pdf-using-python/
+
 from win32com import client
 
 def convert_excel(file_path: str):
