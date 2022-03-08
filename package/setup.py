@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pdfconverter", 
-    version="1.0.0",
+    version="1.0.1",
     author="Isabel Sandstrøm",
     author_email="isabel@hermit.no",
     description="Python command line program for converting different files to pdfs",

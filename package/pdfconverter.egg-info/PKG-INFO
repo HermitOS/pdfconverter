@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pdfconverter
-Version: 1.0.0
+Version: 1.0.1
 Summary: Python command line program for converting different files to pdfs
 Home-page: https://github.com/HermitOS/pdfconverter/tree/main/package
 Author: Isabel Sandstrøm
