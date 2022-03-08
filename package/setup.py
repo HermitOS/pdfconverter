@@ -1,3 +1,4 @@
+from importlib.metadata import entry_points
 import setuptools
 
 with open("README.md", "r") as fh:
@@ -5,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pdfconverter", 
-    version="0.9.11",
+    version="0.9.27",
     author="Isabel Sandstrøm",
     author_email="isabel@hermit.no",
     description="Python command line program for converting different files to pdfs",
@@ -13,11 +14,14 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="",
     packages=['pdfconverter'],
-    install_requires=['fpdf>=1.7.2', 'pywin32>=303', 'pywin32-ctypes>=0.2.0'],
+    install_requires=['fpdf>=1.7.2', 'pywin32>=303', 'pywin32-ctypes>=0.2.0', 'Pillow>=8.4.0'],
     entry_points={
-        'console_scripts': ['convertimage = pdfconverter.convertimage:main'], 
-        'console_scripts': ['convertexcel = pdfconverter.convertexcel:main'], 
-        'console_scripts': ['convertword = pdfconverter.convertword:main'], 
+        'console_scripts': [
+            'convertimage = pdfconverter.convertimage:main', 
+            'convertexcel = pdfconverter.convertexcel:main',
+            'convertword = pdfconverter.convertword:main',
+            'pdfconverter = pdfconverter.pdfconverter:main'
+            ]        
     },
     classifiers=[
         "Programming Language :: Python :: 3",

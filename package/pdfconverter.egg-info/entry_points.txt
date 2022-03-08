@@ -1,3 +1,6 @@
 [console_scripts]
+convertexcel = pdfconverter.convertexcel:main
+convertimage = pdfconverter.convertimage:main
 convertword = pdfconverter.convertword:main
+pdfconverter = pdfconverter.pdfconverter:main
 
