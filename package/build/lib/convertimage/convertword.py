@@ -8,7 +8,6 @@ def main():
     if len(sys.argv) < 3:
         print('Usage:\n\nconvertword inputfile outputfile\n\n\
 where the inputfile is the name of the file you want to convert and has to be one of the formats .doc, .docm, .docx, .dot, .dotm, .dotx, .odt, .rtf, .txt, .wps, .xml or .xps, and the outputfile is the name of the pdf.')
-        exit()
 
     filename = sys.argv[1]
     outputpdfname = sys.argv[2]
